@@ -18,5 +18,3 @@
 ## About The Project
 
 I literally made this just because I decided to learn C++ lol
-
-<p align="right">(<a href="#top">back to top</a>)</p>
