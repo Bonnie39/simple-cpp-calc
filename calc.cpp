@@ -16,7 +16,7 @@ int main()
     cout << "" << endl;
     cin >> operation; cout << "" << endl;
 
-    switch(operation)
+    switch (operation)
     {
         case 'a':
             sum = numOne + numTwo;
