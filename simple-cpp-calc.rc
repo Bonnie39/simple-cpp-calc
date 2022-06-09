@@ -62,6 +62,14 @@ IDB_PNG1                PNG                     "D:\\Documents\\simple-cpp-calc\
 // remains consistent on all systems.
 IDI_ICON1               ICON                    "D:\\Documents\\simple-cpp-calc\\images\\logo.ico"
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE2               WAVE                    "sound\\backgroundmusic.wav"
+
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 

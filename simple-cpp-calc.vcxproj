@@ -151,6 +151,12 @@
     <Image Include="D:\Documents\simple-cpp-calc\images\logo.ico" />
     <Image Include="D:\Documents\simple-cpp-calc\images\logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\wave1.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\backgroundmusic.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

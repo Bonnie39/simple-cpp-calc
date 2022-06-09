@@ -1,8 +1,17 @@
 #include <iostream>
+#include <Windows.h>
+#include <mmsystem.h>
+#include "resource.h"
+#pragma comment(lib, "winmm.lib")
 using namespace std;
 
 int main()
 {
+    HANDLE hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    int redColor = 12;
+    int defaultColor = 7;
+
     int numOne, numTwo, sum;
     char operation;
 
@@ -43,8 +52,25 @@ int main()
             return 0;
             break;
         case 'z':
-            cout << "Hey! That wasn't an option!" << endl; cout << "" << endl;
-            system("pause");
+            if (numOne == 666 && numTwo == 666)
+            {
+                SetConsoleTextAttribute(hConsole, redColor);
+                PlaySound(MAKEINTRESOURCE(IDR_WAVE2), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC);
+                int i = 0;
+                while (true)
+                {
+                    cout << "PLEASE" << endl;
+                    cout << "HELP ME" << endl;
+                    i++;
+                    if (i == 66666)
+                    {
+                        SetConsoleTextAttribute(hConsole, defaultColor);
+                        break;
+                    }
+                }
+            }
+            cout << "Close the program now. (Press any key)" << endl;
+            cin.get();
             return 0;
             break;
     }
